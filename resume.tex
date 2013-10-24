@@ -1,0 +1,175 @@
+\documentclass[10pt]{article}
+
+\usepackage{charter}
+\usepackage{fullpage}
+\usepackage[numbers]{natbib}
+%\usepackage[resetlabels]{multibib}
+\usepackage[ManyBibs]{currvita}
+\usepackage{url}
+
+
+%\newcites{journal,conference,poster,workshop,position,other}{Journal,Conference,Poster,Workshop,Position,Other}
+%\newcites{refpaper}{foo}
+%\newcites{unrefpaper}{foo}
+%\newcites{journal}{foo}
+%\newcites{techreport}{foo}
+%\newcites{submitpaper}{foo}
+%\newcites{classproject}{foo}
+
+
+% Better for lists with 1-2 items and short descriptions
+\newenvironment{sublist}{%
+	\begin{list}{}{%
+		\setlength{\itemsep}{0em}\setlength{\parsep}{0em}%
+		\setlength{\topsep}{0em}\setlength{\parskip}{0em}%
+	}%
+}%
+{ \end{list} }
+
+% Better for lists with more than 2 items and/or long descriptions
+\newenvironment{subbulletlist}{%
+	\begin{list}{\labelitemii}{%
+		\setlength{\topsep}{\itemsep}\setlength{\parskip}{\parsep}%
+	}%
+}%
+{ \end{list} }
+
+\begin{document}
+% This is what will appear at the very top of your CV.
+\begin{cv}{Tony Kovanen\\{\large \itshape Curriculum Vitae}}
+%\date{}
+
+\begin{cvlist}{Contact}
+	\item
+	Hevosmiehenkatu 13 F 67\\
+	00770 Helsinki\\
+	Finland
+	\item Mobile: +358400904910
+	\item E-mail: tony.kovanen@cs.helsinki.fi,\\
+	\hspace{10mm}tonykovanen@hotmail.com
+	% The tilde doesn't show up well in LaTeX, the \sim symbol looks
+	% much better.  Though, you can't copy and paste it from your PDF
+	% like you can with a tilde.
+	\item  Web: \url{http://cs.helsinki.fi/u/tonykova}
+\end{cvlist}
+
+
+\begin{cvlist}{Personal Information}
+	\item Date of Birth: 2 September 1991\\
+		Place of Birth: Helsinki, Finland\\
+		Citizenship: Finnish\\
+        Languages Known: Finnish (native speaker), English (excellent), Spanish (basics), German (basics).
+\end{cvlist}
+
+\begin{cvlist}{Education}
+	\item \emph{{\bf B.Sc. Student}, Computer Science}, September 2011 - till date\\
+	University of Helsinki, Finland
+	% Sublists don't have any extra vertial space.
+	\begin{sublist}
+		\item Thesis: \textit{Analysis of Test Coverage with Mutation Analysis}
+		\item Advisor: Dr. Matti Luukkainen
+        \item GPA: 5/5 (till date)
+        \item ECTS credits: 247 (till date)
+	\end{sublist}
+\end{cvlist}
+
+\begin{cvlist}{Research Interests}
+	\item Recommender Systems, Information Retrieval, Ubiquitous Computing, Machine learning, Augmented Reality, Algorithms.
+
+\end{cvlist}
+
+\newpage
+\begin{cvlist}{Employment}
+	\item[6/2012--till date] {\bf Research Assistant}\\
+	Helsinki Institute for Information Technology HIIT\\
+	Department of Computer Science\\
+	University of Helsinki, Finland
+
+\end{cvlist}
+
+\begin{cvlist}{Research Visits}
+	\item[9/2010--10/2012] {\bf German Research Center for Artificial Intelligence, DFKI}\\		
+		Innovative Retail Laboratory\\	
+		Topic: Augmented reality assisted indoor navigation
+\end{cvlist}
+
+\begin{cvlist}{Software Developed}
+	\item \textbf{TMC - Test My Code}\\
+    An extension to a system for automatically assessing and scoring programs written by students in an IDE to support C/C++ languages. 
+	\item Project website: \url{https://github.com/testmycode}	
+\end{cvlist}
+
+\begin{cvlist}{Special Skills}
+\item Java, JavaScript, BackboneJS, AngularJS, Ruby, Ruby on Rails, C, C++, Matlab, Mobile Java, PHP, PostgreSQL, Git, Spring Web MVC (basics), NodeJS (basics), OpenCV (basics), OpenGL (basics). 
+\end{cvlist}
+
+\begin{cvlist}{Teaching}
+	\item {\bf Course Instructor}\\
+	Programming Project and Database Application courses\\
+	Web: \url{http://www.cs.helsinki.fi/en/people/tonykova}
+		
+	\item {\bf Teaching Assistant}\\
+		Methods for Software Engineering, Data Structures and Algorithms, Programming in C, Location-Awareness\\
+		Web: \url{http://www.cs.helsinki.fi/en/people/tonykova}
+		
+\end{cvlist}	
+
+%\begin{cvlist}{References}
+%\item \textbf{Dr. Patrik Flor\'een}\\
+%	Docent, Research Group Leader\\
+%	Helsinki Institute for Information Technology HIIT\\
+%	Department of Computer Science\\
+%	Gustav H\"allstr\"omin katu 2b\\
+%	FI-00014 University of Helsinki\\
+%	E-mail: patrik.floreen@cs.helsinki.fi\\
+%	Mobile: +358 4057 00444\\
+%	Web: \url{http://www.cs.helsinki.fi/u/floreen}
+
+
+%\item \textbf{Dr. Petteri Nurmi}\\
+%	Research Group Co-leader\\
+%	Helsinki Institute for Information Technology HIIT\\
+%	Department of Computer Science\\
+%	Gustav H\"allstr\"omin katu 2b\\
+%	FI-00014 University of Helsinki\\
+%	E-mail: petteri.nurmi@cs.helsinki.fi\\
+%	Mobile: +358 5032 37687\\
+%	Web: \url{http://www.cs.helsinki.fi/u/ptnurmi/}
+%
+%\item \textbf{Dr. Mikkel Baun Kj{\ae}rgaard}\\
+%	Post-doctoral Researcher\\	
+%	Department of Computer Science\\
+%	IT-Parken \AA bogade 34\\
+%	DK - 8200 \AA rhus N\\
+%	Aarhus University, Denmark\\
+%	E-mail:  mikkelbk@cs.au.dk\\
+%	Mobile: +45 8942 5698\\
+%	Web: \url{http://person.au.dk/en/mikkelbk@cs.au.dk}	
+%\end{cvlist}	
+
+%	\item \textbf{Submitted Papers} 	
+%	%\nocitesubmitted{bhattacharya10adding}
+%	\nocitesubmitted{bhattacharya11monstre}
+%	\nocitesubmitted{nurmi11influence}
+%	\nocitesubmitted{bhattacharya11energy}
+%	\bibliographystylesubmitted{unsrt}
+%	\bibliographysubmitted{papers}
+%	
+%	\item \textbf{Manuscripts Almost Ready} 
+%	\nociteready{nurmi10generalization}
+%	\nociteready{bhattacharya11energy}	
+%	\bibliographystyleready{unsrt}
+%	\bibliographyready{papers}
+	
+%\end{cvlist}
+
+%\begin{cvlist}{Reviewer}
+%\item Mobile HCI 2010	
+%\end{cvlist}
+
+
+\end{cv}
+\end{document}
+
+
+
